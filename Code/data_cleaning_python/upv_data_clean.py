@@ -155,12 +155,3 @@ df_clean['Credits Enrolled Band'] = pd.cut(
 )
 
 df_clean.to_csv(OUTPUT_FILE, index=False, encoding='utf-8-sig')
-
-print(f"\nSaved to {OUTPUT_FILE}")
-print(f"  Students: {len(df_clean):,}")
-print(f"  Columns:  {len(df_clean.columns)}")
-print(f"  Dropout rate: {df_clean['Dropout (1=Yes 0=No)'].mean()*100:.1f}%")
-print()
-print("Column list:")
-for c in df_clean.columns:
-    print(f"  - {c}")
