@@ -6,23 +6,9 @@ The project explores how academic performance and student engagement data can be
 
 ## Project Overview
 
-High dropout rates in STEM programmes affect:
-
-* Students
-* Universities
-* National education systems
-
 This project proposes an early-warning algorithm that evaluates students’ academic performance and campus engagement to estimate their likelihood of dropping out.
 
 The objective is to help universities take pre-emptive action and provide support to students earlier.
-
-## Project Goals
-
-* Identify students who may be at risk of dropping out.
-* Analyse the relationship between academic performance, engagement, and dropout.
-* Compare different prediction methods.
-* Support earlier intervention by universities.
-* Provide statistical insights into dropout patterns.
 
 ## Methodology
 
@@ -42,7 +28,6 @@ The original dataset was reduced through de-duplication and filtering:
 | Processing stage      | Number of rows |
 | --------------------- | -------------: |
 | Raw dataset           |        159,174 |
-| After de-duplication  |         20,428 |
 | Final trimmed dataset |          9,185 |
 
 ### Column Reduction
@@ -52,7 +37,6 @@ The number of variables was also reduced:
 | Processing stage        | Number of columns |
 | ----------------------- | ----------------: |
 | Raw dataset             |               169 |
-| Cleaned dataset         |                33 |
 | Final selected features |                12 |
 
 Categorical variables were converted into binary or model-compatible values.
@@ -97,7 +81,7 @@ The project explored several predictive approaches:
 
 ## Initial Results
 
-The presentation reports the following results for the two initial approaches:
+Our results for the two initial approaches:
 
 | Model             | Accuracy | Precision | Recall |
 | ----------------- | -------: | --------: | -----: |
@@ -115,42 +99,12 @@ For an early-warning system, recall is particularly important because a false ne
 
 However, accuracy should not be considered independently because the dataset contains considerably fewer dropout cases than non-dropout cases.
 
-## Suggested Workflow
 
-Planned improvements include:
-
-* Testing additional machine-learning models.
-* Exploring new academic and engagement features.
-* Adding exogenous data.
-* Improving the detection of minority dropout cases.
-* Addressing class imbalance.
-* Performing additional model validation.
-* Evaluating the model across different universities and programmes.
-
-## Responsible Use
-
-This project should be used as a decision-support tool rather than as an automated decision-making system.
-
-A dropout-risk prediction should trigger supportive actions, such as academic guidance or student outreach. It should not be used to penalise students or restrict access to university services.
-
-Student information must be processed securely and in accordance with applicable privacy and data-protection requirements.
-
-## Team Cloud
+## Contributors
 
 * Omar Abdesslem
 * Gergely Maros
 * Szymon Predel
 * Vincent Dharma Satria
 
-## Institutions
 
-* Universitat Politècnica de València — UPV
-* Warsaw University of Technology — PW
-
-## License
-
-Add the selected project license here, for example:
-
-```text
-MIT License
-```
